@@ -160,7 +160,7 @@ Este projeto foi desenvolvido para demonstrar capacidade de criar interfaces mod
 
 ## 👤 Autor
 
-Desenvolvido por **Eric Pinheiro** como projeto de portfólio.
+Desenvolvido por **Eric Paes** como projeto de portfólio.
 
 ---
 
