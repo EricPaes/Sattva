@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sattva | Artigos para Meditação, Yoga e Espiritualidade</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="glow-cursor"></div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="logo">
+                <i class="ri-moon-clear-line"></i>
+                <span>Sattva</span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home" class="active">Início</a></li>
+                <li><a href="#categories">Categorias</a></li>
+                <li><a href="#products">Loja</a></li>
+                <li><a href="#about">Sobre</a></li>
+            </ul>
+            <div class="nav-actions">
+                <button class="icon-btn search-btn"><i class="ri-search-line"></i></button>
+                <div class="cart-container">
+                    <button class="icon-btn cart-btn"><i class="ri-shopping-cart-line"></i></button>
+                    <span class="cart-count">0</span>
+                </div>
+            </div>
+            <div class="mobile-menu-btn">
+                <i class="ri-menu-3-line"></i>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="ambient-glow glow-1"></div>
+        <div class="ambient-glow glow-2"></div>
+        
+        <div class="hero-content">
+            <span class="badge">Nova Coleção</span>
+            <h1 class="hero-title">Eleve sua energia <br><span>interior</span></h1>
+            <p class="hero-subtitle">Descubra ferramentas sagradas para suportar sua jornada de autoconhecimento, meditação e presença no agora.</p>
+            <div class="hero-buttons">
+                <a href="#products" class="btn btn-primary">Explorar Produtos <i class="ri-arrow-right-line"></i></a>
+                <a href="#about" class="btn btn-secondary">Nossa Essência</a>
+            </div>
+        </div>
+        
+        <div class="hero-visual">
+            <div class="glass-card main-card tilt-card">
+                <div class="card-image bg-mat"></div>
+                <div class="card-info">
+                    <h4>Tapete Áurea</h4>
+                    <p>Yoga & Meditação</p>
+                </div>
+            </div>
+            <div class="floating-element float-1">
+                <i class="ri-sparkling-fill"></i>
+            </div>
+            <div class="floating-element float-2">
+                <i class="ri-plant-fill"></i>
+            </div>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section id="categories" class="categories">
+        <div class="section-header">
+            <h2>Nossos Caminhos</h2>
+            <p>Escolha por onde começar a sua prática diária</p>
+        </div>
+        <div class="category-grid">
+            <div class="category-card" style="--bg-url: url('assets/images/category-meditacao.png');">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <div class="icon-wrapper"><i class="ri-mindfulness-line"></i></div>
+                    <h3>Meditação</h3>
+                    <a href="#" class="link-arrow">Ver coleção <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+            <div class="category-card" style="--bg-url: url('assets/images/category-yoga.png');">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <div class="icon-wrapper"><i class="ri-women-line"></i></div>
+                    <h3>Yoga</h3>
+                    <a href="#" class="link-arrow">Ver coleção <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+            <div class="category-card" style="--bg-url: url('assets/images/category-esoterismo.png');">
+                <div class="card-overlay"></div>
+                <div class="card-content">
+                    <div class="icon-wrapper"><i class="ri-magic-line"></i></div>
+                    <h3>Esoterismo</h3>
+                    <a href="#" class="link-arrow">Ver coleção <i class="ri-arrow-right-line"></i></a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured Products Section -->
+    <section id="products" class="products-section">
+        <div class="ambient-glow glow-3"></div>
+        <div class="section-header">
+            <h2>Coleção Selecionada</h2>
+            <p>Itens curados com intenção e propósito</p>
+        </div>
+        
+        <!-- Filter Tabs -->
+        <div class="product-filters">
+            <button class="filter-btn active" data-filter="all">Todos</button>
+            <button class="filter-btn" data-filter="meditacao">Meditação</button>
+            <button class="filter-btn" data-filter="yoga">Yoga</button>
+            <button class="filter-btn" data-filter="cristais">Cristais</button>
+        </div>
+
+        <div class="product-grid" id="product-grid">
+            <!-- Products injected by JS -->
+        </div>
+        
+        <div class="load-more-container">
+            <button class="btn btn-outline">Carregar mais <i class="ri-loader-4-line"></i></button>
+        </div>
+    </section>
+
+    <!-- Newsletter Section -->
+    <section class="newsletter">
+        <div class="glass-container">
+            <div class="newsletter-content">
+                <h2>Junte-se à nossa comunidade</h2>
+                <p>Receba guias de meditação, novidades e ofertas exclusivas para nutrir sua jornada.</p>
+                <form class="newsletter-form">
+                    <input type="email" placeholder="Seu email melhor" required>
+                    <button type="submit" class="btn btn-primary">Inscrever-se</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-grid">
+            <div class="footer-brand">
+                <div class="logo">
+                    <i class="ri-moon-clear-line"></i>
+                    <span>Sattva</span>
+                </div>
+                <p>Elevando as vibrações do dia a dia através de ferramentas sagradas e práticas milenares.</p>
+                <div class="social-links">
+                    <a href="#"><i class="ri-instagram-line"></i></a>
+                    <a href="#"><i class="ri-pinterest-line"></i></a>
+                    <a href="#"><i class="ri-twitter-x-line"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Nossa Loja</h4>
+                <ul>
+                    <li><a href="#">Todos os Produtos</a></li>
+                    <li><a href="#">Kits de Meditação</a></li>
+                    <li><a href="#">Acessórios de Yoga</a></li>
+                    <li><a href="#">Cristais & Pedras</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Atendimento</h4>
+                <ul>
+                    <li><a href="#">Fale Conosco</a></li>
+                    <li><a href="#">Frete & Entregas</a></li>
+                    <li><a href="#">Trocas & Devoluções</a></li>
+                    <li><a href="#">FAQ</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-links">
+                <h4>Sattva</h4>
+                <ul>
+                    <li><a href="#about">Sobre Nós</a></li>
+                    <li><a href="#">Blog</a></li>
+                    <li><a href="#">Sustentabilidade</a></li>
+                    <li><a href="#">Programa de Afiliados</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Sattva. Todos os direitos reservados. Feito com <i class="ri-heart-fill"></i> e luz.</p>
+        </div>
+    </footer>
+
+    <!-- Cart Overlay -->
+    <div class="cart-overlay" id="cart-overlay">
+        <div class="cart-drawer">
+            <div class="cart-header">
+                <h3>Seu Carrinho</h3>
+                <button class="close-cart" id="close-cart"><i class="ri-close-line"></i></button>
+            </div>
+            <div class="cart-items" id="cart-items">
+                <!-- Cart items injected by JS -->
+                <div class="empty-cart-message">Seu carrinho está vazio.</div>
+            </div>
+            <div class="cart-footer">
+                <div class="cart-total">
+                    <span>Total</span>
+                    <span id="cart-total-price">R$ 0,00</span>
+                </div>
+                <button class="btn btn-primary w-100">Finalizar Compra</button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Toast Notification -->
+    <div id="toast-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
